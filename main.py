@@ -3,7 +3,7 @@ import json
 from PIL import Image
 
 
-ASCII_IMAGE_HEIGHT = 80
+ASCII_IMAGE_HEIGHT = 60
 
 
 with open('character_brightness.json', 'r') as file:
