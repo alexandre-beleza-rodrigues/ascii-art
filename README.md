@@ -72,4 +72,4 @@ For this project what I did was:
 
 1. I wrote a script in the jupyter notebook 'research.ipynb' to automate the process of converting all the ASCII characterS into images using a website that did this conversion, 'https://onlineasciitools.com/convert-ascii-to-image'.
 2. Then I calculate the 'brightness' of each character by calculating the average value of each of their pixels and because the values were all larger than 150 I normalized them to be between 0 and 1 where 0 represented black and 1 white, otherwise I wouldn't have a character to represent black.
-3. Than to convert an image into ASCII art I just resized the image into a reasonable size for ASCII art and then replaced each pixel by a character that represented best the tone of that pixel and the result was the above.
+3. Then to convert an image into ASCII art I just resized the image into a reasonable size for ASCII art and then replaced each pixel by a character that represented best the tone of that pixel and the result was the above.
