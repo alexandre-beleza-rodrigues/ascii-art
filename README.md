@@ -1,8 +1,8 @@
 # ascii-art
 
-This project contains a script, 'main.py', to convert an image into ASCII art like the image below.
-To use it, just write in the terminal 'python main.py <image directory>' like 'python main.py image_examples/phineas.jpg' in this project directory.
-Unlike other projects that used 15 characters at maximum to represent all tones, with this project I represent the images with all ASCII characters and instead of eyeballing the 'brightness' of each character I calculated the 'brightness' of each of them by calculating the average value of the pixels of an image representing each character. I have the script that I used to make this in the jupyter notebook 'research.ipynb'.
+  This project contains a script, 'main.py', to convert an image into ASCII art like the image below.
+  To use it, just write in the terminal 'python main.py <image directory>' like 'python main.py image_examples/phineas.jpg' in this project directory.
+  Unlike other projects that used 15 characters at maximum to represent all tones, with this project I represent the images with all ASCII characters and instead of eyeballing the 'brightness' of each character I calculated the 'brightness' of each of them by calculating the average value of the pixels of an image representing each character. I have the script that I used to make this in the jupyter notebook 'research.ipynb'.
 
 ```text
 Ji3Jlllllllllllllllllllllis37lll7tulllllllllllliY23sillilu22233sYV33323Jllll
