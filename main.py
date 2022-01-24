@@ -2,7 +2,8 @@ import sys
 import json
 from PIL import Image
 
-SIZE = (150, 75)  # (side, hight = side/2)
+
+ASCII_IMAGE_HEIGHT = 80
 
 
 with open('character_brightness.json', 'r') as file:
@@ -35,7 +36,14 @@ def get_best_character_for_pixel(pixel_value: int) -> str:
 
 def convert_img_to_ascii(image: Image) -> str:
     image = image.convert('L')
-    image = image.resize(SIZE)
+    width, height = image.size
+
+    image_proportion = width / height
+
+    ascii_width = int(image_proportion * ASCII_IMAGE_HEIGHT) * 2
+    ascii_height = ASCII_IMAGE_HEIGHT
+
+    image = image.resize((ascii_width, ascii_height))
     image_pixels = normalize_image_pixel_values(list(image.getdata()))
     
     ascii_image = ''
@@ -45,7 +53,7 @@ def convert_img_to_ascii(image: Image) -> str:
 
         ascii_image += character
 
-        if pixel_num % SIZE[0] == 0:
+        if pixel_num % ascii_width == 0:
             ascii_image += '\n'
 
         pixel_num += 1
