@@ -1,6 +1,6 @@
 # ascii-art
 
-```python
+```text
 Ji3Jlllllllllllllllllllllis37lll7tulllllllllllliY23sillilu22233sYV33323Jllll
 ii3JllllllllllllllllllllJis37lll7tul7lllllllllllJFsilllilu22233xxk32223[7lll
 ii3Jllllllllllllllll777vslJu7lll7tul7llllllllllll77llllilu222221t532232s7lll
